@@ -1,5 +1,4 @@
 
-
 #simple inheritance example
 class Vehicle():    #parent class
     def __init__(self, brand):
@@ -78,7 +77,7 @@ class Dog(Animal):  # Different child
     def bark(self):
         print("Bark!")
 
-class Cat(Animal):  # Another child
+class Cat(Animal):
     def meow(self):
         print("Meow!")
 
@@ -128,4 +127,5 @@ cat.meow()
 
 print("\nHYBRID:")
 d = D()
+print(d.mro())
 d.show()  # Will follow MRO → B before C
