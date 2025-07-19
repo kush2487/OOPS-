@@ -32,7 +32,10 @@ cat meows
 
 '''
 
-# METHOD OVERLOADING : is not fully supported in python, so we take the help of *args, default parameter and Type checks
+# METHOD OVERLOADING : 
+# is not fully supported in python, so we take the help of *args, default parameter and Type checks
+
+
 class Invoice:
     def generate_total(self, *prices, discount=0):
         total = sum(prices)
